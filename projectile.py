@@ -1,19 +1,18 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-gravity = 9.81
-
 class projectile:
-    def __init__(self, name, yVelocity, xVelocity, height):
+    def __init__(self, name, xVelocity, yVelocity, height, gravity):
         self.name = name
-        self.yVelocity = yVelocity
         self.xVelocity = xVelocity
+        self.yVelocity = yVelocity
         self.height = height
+        self.gravity = gravity
         self.calc()
     
     def calc(self):
-        self.endTime = (self.yVelocity + (self.yVelocity ** 2 + 2 * gravity * self.height)**0.5) / gravity
-        self.peakTime = self.yVelocity / gravity
+        self.endTime = (self.yVelocity + (self.yVelocity ** 2 + 2 * self.gravity * self.height)**0.5) / self.gravity
+        self.peakTime = self.yVelocity / self.gravity
         self.time = np.linspace(0, self.endTime, 100)
         self.xDistance = self.xVelocity * self.time
-        self.yDistance = self.time * (self.yVelocity - (gravity * self.time) /  2) + self.height
+        self.yDistance = self.time * (self.yVelocity - (self.gravity * self.time) /  2) + self.height
