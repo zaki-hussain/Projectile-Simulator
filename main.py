@@ -74,6 +74,8 @@ while True:
 
 for _ in range(noObjects):
     print()
-    newGraph.addLine(newObject())
+    a = newObject()
+    print("\nProjectile " + a.name + " reaches a peak height after " + str(a.peakTime) + " seconds and hits the ground after " + str(a.endTime) + " seconds.")
+    newGraph.addLine(a)
 
 newGraph.render()
