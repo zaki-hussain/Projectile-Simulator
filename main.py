@@ -4,11 +4,11 @@ from graph import graph
 newGraph = graph()
 
 def newObject():
-    name = input("Enter the name of the new object: ")
+    name = input("Enter the name of the new projectile: ")
     
     while True:
         try:
-            xVelocity = float(input("Enter the horizontal velocity of the object: "))
+            xVelocity = float(input("Enter the horizontal velocity of the projectile: "))
             if xVelocity >= 0:
                 break
             else:
@@ -21,7 +21,7 @@ def newObject():
     
     while True:
         try:
-            yVelocity = float(input("Enter the vertical velocity of the object: "))
+            yVelocity = float(input("Enter the vertical velocity of the projectile: "))
             if yVelocity >= 0:
                 break
             else:
@@ -34,7 +34,7 @@ def newObject():
     
     while True:
         try:
-            height = float(input("Enter the starting height of the object: "))
+            height = float(input("Enter the starting height of the projectile: "))
             if height >= 0:
                 break
             else:
@@ -47,7 +47,7 @@ def newObject():
     
     while True:
         try:
-            gravity = float(input("Enter the gravitational field strength acting on the object: "))
+            gravity = float(input("Enter the gravitational field strength acting on the projectile: "))
             if gravity > 0:
                 break
             else:
