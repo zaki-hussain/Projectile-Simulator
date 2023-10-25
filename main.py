@@ -62,7 +62,7 @@ def newObject():
 
 while True:
     try:
-        noObjects = int(input("Enter the number of objects you would like to graph: "))
+        noObjects = int(input("Enter the number of projectiles you would like to simulate: "))
         if noObjects > 0:
             break
         else:
