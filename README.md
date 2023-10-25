@@ -15,4 +15,5 @@ The graph can handle multiple objects so that they can be compared on one graph.
     - The name should be a string
     - The velocities and starting height should be a number greater than or equal to zero
     - The gravitational field strength should be a number greater than zero
-4. After entering all of the values for the projectiles, the graph will automatically be displayed
+4. For each projectile, both the time taken for it to reach it's peak height and the time taken for it to hit the ground are printed to the console
+5. After entering all of the values for the projectiles, the graph will automatically be displayed
